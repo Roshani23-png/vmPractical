@@ -82,7 +82,7 @@ function App() {
   const [formData, setFormData] = useState({ id: '', name: '', dept: '', city: '', age: '' });
   const [isEditing, setIsEditing] = useState(false); // Check if we are adding or updating
 
-  const URL = 'http://localhost:5000/api/students';
+  const URL = 'https://vmpractical-1.onrender.com/api/students';
 
   const fetchData = () => {
     axios.get(URL).then(res => setStudents(res.data)).catch(err => console.log(err));
